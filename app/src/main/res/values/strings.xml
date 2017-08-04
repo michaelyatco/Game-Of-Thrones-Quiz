@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Game of Thrones Quiz</string>
+
+    <string name="question0">A man must take a quiz.</string>
+    <string name="question0a">Type your name here…</string>
+    <string name="question0b">Submit</string>
+
+    <string name="question1">How do you respond to \"Valar Morghulis\"?</string>
+    <string name="question2">Ned Stark is the true father of Jon Snow</string>
+    <string name="question2a">True</string>
+    <string name="question2b">False</string>
+    <string name="question3">What is the motto of House Stark?</string>
+    <string name="question4">Which leader was betrayed at the Red Wedding?</string>
+    <string name="question4a">Robb Stark</string>
+    <string name="question4b">Robert Baratheon</string>
+    <string name="question4c">Tywin Lannister</string>
+    <string name="question5">What were the final words of the Mad King?</string>
+    <string name="question6">Who died at the Purple wedding?</string>
+    <string name="question6a">Tommen</string>
+    <string name="question6b">Marcela</string>
+    <string name="question6c">Joffrey</string>
+    <string name="question7">What do we say to the god of death?</string>
+    <string name="question8">Who killed the Red Viper?</string>
+    <string name="question8a">The Hound</string>
+    <string name="question8b">The Mountain</string>
+    <string name="question8c">The Young Wolf</string>
+    <string name="question9">What is Jaime Lannister\'s nickname?</string>
+    <string name="question10">Which dragon does Daenerys Targaryan ride?</string>
+    <string name="question10a">Rhaegal</string>
+    <string name="question10b">Viserion</string>
+    <string name="question10c">Drogon</string>
+
+    <string name="questionHelpText">Type your answer here…</string>
+</resources>
