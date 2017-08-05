@@ -25,10 +25,13 @@
     <string name="question8b">The Mountain</string>
     <string name="question8c">The Young Wolf</string>
     <string name="question9">What is Jaime Lannister\'s nickname?</string>
-    <string name="question10">Which dragon does Daenerys Targaryan ride?</string>
-    <string name="question10a">Rhaegal</string>
-    <string name="question10b">Viserion</string>
-    <string name="question10c">Drogon</string>
+    <string name="question10">Which are the three dragons of Daenerys Targaryan?</string>
+    <string name="question10a">Aerys</string>
+    <string name="question10b">Rhaegal</string>
+    <string name="question10c">Aemon</string>
+    <string name="question10d">Viserion</string>
+    <string name="question10e">Aerion</string>
+    <string name="question10f">Drogon</string>
 
     <string name="questionHelpText">Type your answer here…</string>
 </resources>

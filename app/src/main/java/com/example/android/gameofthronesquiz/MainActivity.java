@@ -3,6 +3,7 @@ package com.example.android.gameofthronesquiz;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         score = 0;
         RadioGroup dataRadio;
         RadioButton dataRadioButton;
+        CheckBox dataBox;
 
         // Question 1 - Fill in the blank
         EditText question1 = (EditText) findViewById(R.id.question_1);
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         switch (dataRadio.getCheckedRadioButtonId()) {
             case R.id.radio2true:
                 dataRadioButton = (RadioButton) findViewById(R.id.radio2true);
-                question1.setBackgroundColor(0x22FF0000);
+                dataRadioButton.setBackgroundColor(0x22FF0000);
                 break;
             case R.id.radio2false:
                 dataRadioButton = (RadioButton) findViewById(R.id.radio2false);
@@ -148,28 +150,55 @@ public class MainActivity extends AppCompatActivity {
             question9.setBackgroundColor(0x22FF0000);
         }
 
-        // Question 10 - Multiple Choice with buttons
-        dataRadio = (RadioGroup) findViewById(R.id.question_10);
+//        // Question 10 - Multiple Correct Answers with CheckBox
 
-        switch (dataRadio.getCheckedRadioButtonId()) {
-            case R.id.radio10a:
-                dataRadioButton = (RadioButton) findViewById(R.id.radio10a);
-                dataRadioButton.setBackgroundColor(0x22FF0000);
-                break;
-            case R.id.radio10b:
-                dataRadioButton = (RadioButton) findViewById(R.id.radio10b);
-                dataRadioButton.setBackgroundColor(0x22FF0000);
-                break;
-            case R.id.radio10c:
-                dataRadioButton = (RadioButton) findViewById(R.id.radio10c);
-                dataRadioButton.setBackgroundColor(0x2200FF00);
-                score += 1;
-                break;
 
+        CheckBox checkBox1 = (CheckBox) findViewById(R.id.button10a);
+        boolean checkedBox1 = checkBox1.isChecked();
+        CheckBox checkBox2 = (CheckBox) findViewById(R.id.button10b);
+        boolean checkedBox2 = checkBox2.isChecked();
+        CheckBox checkBox3 = (CheckBox) findViewById(R.id.button10c);
+        boolean checkedBox3 = checkBox3.isChecked();
+        CheckBox checkBox4 = (CheckBox) findViewById(R.id.button10d);
+        boolean checkedBox4 = checkBox4.isChecked();
+        CheckBox checkBox5 = (CheckBox) findViewById(R.id.button10e);
+        boolean checkedBox5 = checkBox5.isChecked();
+        CheckBox checkBox6 = (CheckBox) findViewById(R.id.button10f);
+        boolean checkedBox6 = checkBox6.isChecked();
+
+        if (checkedBox1) {
+            dataBox = (CheckBox) findViewById(R.id.button10a);
+            dataBox.setBackgroundColor(0x22FF0000);
+            score -= 1;
+        }
+        if (checkedBox2) {
+            dataBox = (CheckBox) findViewById(R.id.button10b);
+            dataBox.setBackgroundColor(0x2200FF00);
+            score += 1;
+        }
+        if (checkedBox3) {
+            dataBox = (CheckBox) findViewById(R.id.button10c);
+            dataBox.setBackgroundColor(0x22FF0000);
+            score -= 1;
+        }
+        if (checkedBox4) {
+            dataBox = (CheckBox) findViewById(R.id.button10d);
+            dataBox.setBackgroundColor(0x2200FF00);
+            score += 1;
+        }
+        if (checkedBox5) {
+            dataBox = (CheckBox) findViewById(R.id.button10e);
+            dataBox.setBackgroundColor(0x22FF0000);
+            score -= 1;
+        }
+        if (checkedBox6) {
+            dataBox = (CheckBox) findViewById(R.id.button10f);
+            dataBox.setBackgroundColor(0x2200FF00);
+            score += 1;
         }
 
-        Float finalScore = Float.parseFloat(String.valueOf(score));
-        finalScore = finalScore / 10;
+        float finalScore = (float) score;
+        finalScore = finalScore / 13;
         finalScore = finalScore * 100;
 
         Toast.makeText(this, "Your final score is: " + String.valueOf(score) + " points\nYou got " + Math.round(finalScore) + " % correct.", Toast.LENGTH_SHORT).show();

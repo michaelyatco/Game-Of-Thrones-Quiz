@@ -171,26 +171,35 @@
                 style="@style/quizQuestionStyle"
                 android:text="@string/question10" />
 
-            <RadioGroup
-                android:id="@+id/question_10"
-                style="@style/quizRadioGroup">
+            <CheckBox
+                android:id="@+id/button10a"
+                style="@style/quizCheckBox"
+                android:text="@string/question10a" />
 
-                <RadioButton
-                    android:id="@+id/radio10a"
-                    style="@style/quizRadioButton"
-                    android:text="@string/question10a" />
+            <CheckBox
+                android:id="@+id/button10b"
+                style="@style/quizCheckBox"
+                android:text="@string/question10b" />
 
-                <RadioButton
-                    android:id="@+id/radio10b"
-                    style="@style/quizRadioButton"
-                    android:text="@string/question10b" />
+            <CheckBox
+                android:id="@+id/button10c"
+                style="@style/quizCheckBox"
+                android:text="@string/question10c" />
 
-                <RadioButton
-                    android:id="@+id/radio10c"
-                    style="@style/quizRadioButton"
-                    android:text="@string/question10c" />
+            <CheckBox
+                android:id="@+id/button10d"
+                style="@style/quizCheckBox"
+                android:text="@string/question10d" />
 
-            </RadioGroup>
+            <CheckBox
+                android:id="@+id/button10e"
+                style="@style/quizCheckBox"
+                android:text="@string/question10e" />
+
+            <CheckBox
+                android:id="@+id/button10f"
+                style="@style/quizCheckBox"
+                android:text="@string/question10f" />
 
             <LinearLayout
                 android:layout_width="match_parent"
