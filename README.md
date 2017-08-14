@@ -7,7 +7,7 @@ Udacity's Android Developer Nanodegree program exercise #5
 * Taking an app layout from drawing to XML code.
 * Creating, positioning, and styling views.
 * Creating interactivity through button clicks and Java code.
-* Creating a fun and interactive trivia game with Game of Thrones
+* Creating a fun and interactive trivia game with Game of Thrones.
 
 ## Built With
 
