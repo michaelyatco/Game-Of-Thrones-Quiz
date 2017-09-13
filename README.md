@@ -1,7 +1,5 @@
 # Game of Thrones Quiz App
 
-Udacity's Android Developer Nanodegree program exercise #5
-
 ## Purpose
 
 * Taking an app layout from drawing to XML code.
